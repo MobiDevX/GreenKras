@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">GreenKras</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">GreenKras.ru</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pick_image_intent_text">Добавление фотографии</string>
+    <string name="menu_home">О проекте</string>
+    <string name="menu_account">Личный кабинет</string>
+    <string name="menu_tree">Добавить дерево</string>
+    <string name="menu_scrub">Добавить кустарник</string>
+    <string name="menu_parterres">Добавить цветник</string>
+    <string name="menu_poligon">Добавить парк</string>
+    <string name="menu_vote">Проголосовать за парк</string>
+    <string name="menu_map">Карта</string>
+    <string name="menu_help">Справочник</string>
+    <string name="menu_download">Загрузить данные меток</string>
+    <string name="menu_vk">Группа Вконтакте</string>
+    <string name="menu_tr">Техподдержка</string>
+    <string name="menu_site">Сайт проекта GreenKras</string>
+    <string name="menu_gosite">Переход на сайт проекта</string>
+    <string name="menu_govk">Переход к разработчику</string>
+    <string name="menu_setting">Настройки</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_exit">Выход из пользователя</string>
+    <string name="user_location_permission_explanation">Приложению необходимо получить доступ к геолокации</string>
+    <string name="user_location_permission_not_granted">Для работы с приложением нужно разрешить доступ к геолокации</string>
+    <string name="access_token">pk.eyJ1IjoicmVhdmVyNzE3IiwiYSI6ImNqdm5pb2VwajB2OXA0OGxldWo0bHN6MWIifQ.HQsK7BFinOlmFYEtDQyRVQ</string>
+    <string name="svaz">Обратная связь</string>
+    <string name="priloz">Приложение</string>
+    <string name="yes">Я прочитал</string>
+    <string name="hide">Скрыть</string>
+    <string name="restore">Отправить</string>
+    <string name="cancel">Отмена</string>
+    <string name="add">Применить</string>
+    <string name="tutorial">1) Убедитесь, что данного парка нет в приложении. \n2) Обведите парк метками.\n3) Нажмите на кнопку отрисовки области.
+        \n4) Если допустили ошибку - нажмите на кнопку очистки и начините сначала.\n5) Обвели парк? - введите его название.
+    \n6) Нажмите на галочку.\n7) В пункте меню \"Голосование\" проголосуйте за своё название парка и не забудьте попросить друзей.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="titul">Титул: </string>
+
+
+
+
 </resources>

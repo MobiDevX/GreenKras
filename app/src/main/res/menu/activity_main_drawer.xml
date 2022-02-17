@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_main"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="@string/menu_account" />
+        <item
+            android:id="@+id/nav_tree"
+            android:icon="@drawable/ic_place"
+            android:title="@string/menu_tree" />
+        <item
+            android:id="@+id/nav_scrub"
+            android:icon="@drawable/ic_place"
+            android:title="@string/menu_scrub" />
+        <item
+            android:id="@+id/nav_parterres"
+            android:icon="@drawable/ic_place"
+            android:title="@string/menu_parterres" />
+        <item
+            android:id="@+id/nav_poligon"
+            android:icon="@drawable/ic_place"
+            android:title="@string/menu_poligon" />
+        <item
+            android:id="@+id/nav_vote"
+            android:icon="@drawable/ic_check_box"
+            android:title="@string/menu_vote" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/menu_map" />
+
+
+    </group>
+
+    <item android:title="@string/priloz">
+
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/menu_setting" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/menu_help" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/svaz">
+
+
+        <menu>
+            <item
+                android:id="@+id/nav_site"
+                android:icon="@drawable/ic_site"
+                android:title="@string/menu_site" />
+
+            <item
+                android:id="@+id/nav_tp"
+                android:icon="@drawable/ic_mail"
+                android:title="@string/menu_tr" />
+
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/menu_exit" />
+</menu>

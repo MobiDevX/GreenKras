@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="7dp">
+                <ImageButton
+                    android:layout_marginBottom="35dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/close_help"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_close"
+                    android:background="@drawable/style_buttonmap">
+                </ImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="?attr/textColor"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Объекта"
+                    android:id="@+id/nameObject">
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageObject"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+            </ImageView>
+
+
+        <TextView
+            android:gravity="start"
+            android:id="@+id/disObject"
+            android:textColor="?attr/textColor"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="7dp"
+            android:text="Описание дерева"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

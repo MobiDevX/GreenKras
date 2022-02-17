@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/bgColor"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:paddingLeft="7dp"
+                android:textColor="?attr/textColor"
+                android:theme="@style/Autocomplete"
+                android:id="@+id/autoCompleteTextParterres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Вид цветника"
+                android:completionThreshold="1"
+                android:inputType="textCapSentences"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:id="@+id/helpParterres"
+                android:background="?attr/bgColor"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_help_grey">
+            </ImageButton>
+        </LinearLayout>
+
+            <EditText
+                android:paddingLeft="7dp"
+                android:imeOptions="actionDone"
+                android:textColorHint="?attr/textColor"
+                android:textColor="?attr/textColor"
+                android:id="@+id/Parterres_ploshad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:hint="Площадь цветника (см)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Состояние цветника:"
+                android:textColor="?attr/textColor"
+                android:textSize="20dp" />
+            <ImageButton
+                android:layout_marginRight="7dp"
+                android:id="@+id/helpParterresHealth"
+                android:background="?attr/bgColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_help_grey">
+            </ImageButton>
+        </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Хорошее" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Среднее" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Плохое" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/textView3"
+                android:textColor="?attr/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="20dp"
+                android:text="Тип насаждения:" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Клумба" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Рабатки" />
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Бордюры" />
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Альпинарии, каменистые сады" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Вертикальное озеленение" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Миксбордеры" />
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="Вазоны" />
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/textColor"
+                    android:text="Добавить фотографию: ">
+                </TextView>
+                <ImageView
+                    android:layout_marginTop="17dp"
+                    android:id="@+id/imageToEncode"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_add">
+
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textIsSelectable="true"
+                android:id="@+id/Parterres_coordi"
+                android:textColor="?attr/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:layout_marginTop="14dp"
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="40dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="53dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_location_me"
+                    android:tint="#ffffff" />
+
+            </com.mapbox.mapboxsdk.maps.MapView>
+
+            <Button
+                android:background="?attr/selectIconColor"
+                android:id="@+id/SendParterres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отправить данные"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="666dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

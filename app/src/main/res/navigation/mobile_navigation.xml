@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.reaver.greenkras.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.reaver.greenkras.ui.personal.Account"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_tree"
+        android:name="com.reaver.greenkras.ui.tree.Tree"
+        android:label="@string/menu_tree"
+        tools:layout="@layout/fragment_tree" />
+    <fragment
+        android:id="@+id/nav_scrub"
+        android:name="com.reaver.greenkras.ui.scrub.Scrub"
+        android:label="@string/menu_scrub"
+        tools:layout="@layout/fragment_scrub" />
+    <fragment
+        android:id="@+id/nav_parterres"
+        android:name="com.reaver.greenkras.ui.parterres.Parterres"
+        android:label="@string/menu_parterres"
+        tools:layout="@layout/fragment_parterres" />
+    <fragment
+        android:id="@+id/nav_poligon"
+        android:name="com.reaver.greenkras.ui.poligon.PoligonFragment"
+        android:label="@string/menu_poligon"
+        tools:layout="@layout/fragment_poligon" />
+    <fragment
+        android:id="@+id/nav_vote"
+        android:name="com.reaver.greenkras.ui.vote.VoteFragment"
+        android:label="@string/menu_vote"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.reaver.greenkras.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.reaver.greenkras.ui.help.Help"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.reaver.greenkras.ui.setting.Setting"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_site"
+        android:label="@string/menu_home"
+        android:name="com.reaver.greenkras.ui.home.HomeFragment" />
+
+    <fragment
+        android:id="@+id/nav_tp"
+        android:label="@string/menu_home"
+        android:name="com.reaver.greenkras.ui.home.HomeFragment" />
+
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.reaver.greenkras.ui.home.HomeFragment"
+        android:label="@string/menu_exit"/>
+</navigation>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor">
+
+    <LinearLayout
+        android:background="@drawable/style_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/shinobu"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#ffffff">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ProgressBar
+            android:id="@+id/progressLvl"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_shape"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="65"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:textColor="?attr/textColor"
+            android:id="@+id/login"
+            android:text="Никнейм"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        <TextView
+            android:textColor="?attr/textColor"
+            android:id="@+id/twLvl"
+            android:text="Уровень"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="?attr/textColor"
+            android:id="@+id/twTit"
+            android:text="Титул"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="?attr/textColor"
+                android:id="@+id/twOst"
+                android:text="Измерений до следующего уровня"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/style_account_reverse">
+
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twSder"
+        android:text="Деревьев измерено"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twSkust"
+        android:text="Кустарников измерено"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twSparter"
+        android:text="Цветников измерено"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twSpark"
+        android:text="Парков создано"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/style_account_round">
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twAll"
+        android:text="Всего объектов"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/style_account_round">
+
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twAllVot"
+        android:text="Проголосовал раз"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textColor="?attr/textColor"
+                android:layout_gravity="center"
+                android:text="Предупреждаем!!!"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="?attr/textColor"
+            android:text="При предоставлении недостоверных сведений об объектах озеленения города Красноярск - Ваш аккаунт будет заблокирован."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/style_account_round">
+    <TextView
+        android:textColor="?attr/textColor"
+        android:id="@+id/twWarn"
+        android:text="Бан"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/textColor"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/twEmail"
+            android:textColor="?attr/textColor"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Сменить почту">
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/twPassword"
+            android:textColor="?attr/textColor"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сменить пароль">
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="?attr/transparent"
+        android:visibility="gone"
+        android:id="@+id/laEmail"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:textColorHint="?attr/textColor"
+        android:textColor="?attr/textColor"
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="?attr/transparent"
+        android:visibility="gone"
+        android:id="@+id/laPassword"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <EditText
+            android:textColorHint="?attr/textColor"
+            android:textColor="?attr/textColor"
+            android:id="@+id/Password"
+            android:layout_width="350dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Введите новый пароль" />
+        <ImageView
+            android:id="@+id/visibleOn"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_visibility"
+            android:layout_gravity="end">
+        </ImageView>
+    </FrameLayout>
+    <EditText
+        android:textColorHint="?attr/textColor"
+        android:textColor="?attr/textColor"
+        android:id="@+id/Password2"
+        android:layout_width="350dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Повторите новый пароль" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="bottom|center"
+            android:background="?attr/selectIconColor"
+            android:id="@+id/Apply"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Применить изменения"/>
+
+
+</LinearLayout>

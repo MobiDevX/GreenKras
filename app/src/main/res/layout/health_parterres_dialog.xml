@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="7dp">
+                    <ImageButton
+                        android:layout_marginBottom="35dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/close_help"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_close"
+                        android:background="@drawable/style_buttonmap">
+                    </ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="?attr/textColor"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Критерии оценки \nдекоративности цветников">
+                    </TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Хорошее состояние">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/cvet_n"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="150dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/cvett_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp">
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Растительные группировки со здоровыми растениями без увядших и засыхающих частей, цветники с чётко очерченными контурами. Цветники с наличием увядших частей растений (до 20 %), контуры которого чётко обозначены."/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Среднее состояние">
+            </TextView>
+
+
+                <ImageView
+                    android:src="@drawable/cvet_s"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="120dp">
+                </ImageView>
+
+
+
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Цветники неопрятного вида, с наличием увядших частей растений (до 40 %), контуры нечётко обозначены. Требуется проведение срочных мероприятий по уходу и мелкому ремонту"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Плохое состояние">
+            </TextView>
+
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/cvet_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp">
+                </ImageView>
+
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Цветники неопрятного вида, с наличием увядших частей растений (более 60 %), контуры обозначены нечётко. Требуется замена"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

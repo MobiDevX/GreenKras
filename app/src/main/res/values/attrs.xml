@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bgColor" format="color"/>
+    <attr name="bgGrey" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="accountHead" format="color"/>
+    <attr name="transparent" format="color"/>
+    <attr name="metaTextColor" format="color"/>
+    <attr name="selectIconColor" format="color"/>
+    <attr name="unselectIconColor" format="color"/>
+    <attr name="selectTextColor" format="color"/>
+    <attr name="unselectTextColor" format="color"/>
+    <attr name="menuColor" format="color"/>
+</resources>

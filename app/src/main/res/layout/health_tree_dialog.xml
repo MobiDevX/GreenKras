@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="7dp">
+                    <ImageButton
+                        android:layout_marginBottom="35dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/close_help"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_close"
+                        android:background="@drawable/style_buttonmap">
+                    </ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="?attr/textColor"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Категории состояния \nлиственных и хвойных деревьев">
+                    </TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Дерево хорошего состояния">
+            </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/tree_n"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="300dp">
+            </ImageView>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/hvoi_n"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+            </ImageView>
+        </LinearLayout>
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Без признаков ослабления - деревья здоровые, нормального развития, густо облиственные, форма кроны естественная или правильно сформированная, окраска и величина листьев соответствуют виду растения, заболеваний и повреждений вредителями нет, без механических повреждений"/>
+
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Дерево среднего состояния">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/tree_s"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="300dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/hvoi_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp">
+                </ImageView>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Ослабленное - деревья условно здоровые с неравномерно развитой кроной, недостаточно облиственные, листва или хвоя часто светлее обычного, крона слабо ажурная, в кроне менее 25 % сухих ветвей, единичные водяные побеги. Заболевания и повреждения вредителями в начальной стадии, которые можно устранить, с наличием незначительных механических повреждений, не угрожающих их жизни.
+Сильно ослабленное - листва мельче или светлее обычной, хвоя светло-зеленая или сероватая матовая, крона изрежена, сухих ветвей от 25 до 50 %, прирост уменьшен более чем наполовину по сравнению с нормальным. Часто имеются признаки повреждения болезнями и вредителями ствола, корневых лап, ветвей, хвои и листвы, в том числе, попытки или местные поселения стволовых вредителей, у лиственных деревьев часто водяные побеги на стволе и ветвях"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Дерево плохого состояния">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/tree_b"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="300dp">
+                </ImageView>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/hvoi_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp">
+                </ImageView>
+            </LinearLayout>
+
+
+            <TextView
+                android:gravity="start"
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:text="Усыхающее - крона слабо развита или изрежена, возможна суховершинность и усыхание кроны более 75 % (для ильмовых насаждений, пораженных голландской болезнью с усыханием кроны более 30 % и менее если имеются входные и вылетные отверстия заболонников), имеются признаки заболеваний (дупла, обширные сухобочины, табачные сучки и пр.) и признаки заселения стволовыми вредителями, могут быть значительные механические повреждения.\nСухостой текущего года - листва усохла, увяла или преждевременно опала, хвоя серая, желтая или бурая, крона усохла, но мелкие веточки и кора сохранились. На стволе, признаки заселения стволовыми вредителями или их вылетные отверстия.
+Сухостой прошлых лет - листва или хвоя осыпались или сохранились лишь частично, мелкие веточки и часть ветвей опали, кора разрушена или опала на большей части ствола. На стволе и ветвях имеются вылетные отверстия насекомых, под корой - обильная буровая мука и грибница дереворазрушающих грибов."/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

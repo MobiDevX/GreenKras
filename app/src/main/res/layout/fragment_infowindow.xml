@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="@drawable/style_layoutmap"
+   >
+        <TextView
+            android:textColor="?attr/textColor"
+            android:id="@+id/fragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:id="@+id/fragment_snipet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:id="@+id/fragment_link"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Нет фото"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/loadimage"
+            android:visibility="gone"
+            android:layout_width="240dp"
+            android:layout_height="240dp">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_height="35dp"
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_marginBottom="7dp"
+                            android:id="@+id/fragment_button_vote"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_edit_map"
+                            android:layout_gravity="start"
+                            android:background="@drawable/style_buttonmap">
+                        </ImageButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/style_buttonmap"
+                            android:src="@drawable/ic_arrow_down"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="vertical">
+                        <ImageButton
+                            android:layout_marginBottom="7dp"
+                            android:layout_gravity="end"
+                            android:id="@+id/fragment_button_close"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_close"
+                            android:background="@drawable/style_buttonmap">
+                        </ImageButton>
+                </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

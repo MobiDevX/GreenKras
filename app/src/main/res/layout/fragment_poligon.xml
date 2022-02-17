@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/location_frag_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    xmlns:mapbox="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <EditText
+        android:textColorHint="?attr/textColor"
+        android:textColor="?attr/textColor"
+        android:id="@+id/park_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="Название парка" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="40dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="53dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_location_me"
+            android:tint="#ffffff" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="40dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="103dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_color"
+            android:tint="#ffffff" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="130dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_select"
+            android:tint="#ffffff" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_done"
+            android:tint="#ffffff" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_delete_black"
+            android:tint="#ffffff" />
+
+
+</com.mapbox.mapboxsdk.maps.MapView>
+
+
+
+</LinearLayout>

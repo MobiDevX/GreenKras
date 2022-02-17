@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:imeOptions="actionNext"
+                android:textColor="?attr/textColor"
+                android:theme="@style/Autocomplete"
+                android:id="@+id/autoCompleteTextScrub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:hint="Вид кустарника"
+                android:completionThreshold="1"
+                android:layout_weight="1"
+                android:inputType="textCapSentences"
+                android:singleLine="true"/>
+            <ImageButton
+                android:id="@+id/helpScrub"
+                android:background="?attr/bgColor"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_help_grey">
+            </ImageButton>
+        </LinearLayout>
+            <EditText
+                android:imeOptions="actionDone"
+                android:paddingLeft="7dp"
+                android:textColorHint="?attr/textColor"
+                android:textColor="?attr/textColor"
+                android:id="@+id/Scrub_ploshad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:hint="Площадь кустарника (см)" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="?attr/textColor"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="Состояние кустарника:" />
+            <ImageButton
+                android:layout_marginRight="7dp"
+                android:id="@+id/helpScrubHealth"
+                android:background="?attr/bgColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_help_grey">
+            </ImageButton>
+        </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="20px">
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Хорошее" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Среднее" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Плохое" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textColor="?attr/textColor"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="20dp"
+                android:text="Тип насаждения:" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="20px">
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Стриженные" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Солитер" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Группа" />
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Смешенная группа" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Живая изгородь (стриженная)" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Живая изгородь (нестриженная)" />
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Живая изгородь из деревьев и кустарников" />
+
+                <RadioButton
+                    android:textColor="?attr/textColor"
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Топиари" />
+
+
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:text="Добавить фотографию: ">
+                </TextView>
+                <ImageView
+                    android:layout_marginTop="17dp"
+                    android:id="@+id/imageToEncode"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_add">
+
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textIsSelectable="true"
+                android:textColor="?attr/textColor"
+                android:id="@+id/Scrub_coordi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:layout_marginTop="14dp"
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCustomSize="40dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="53dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_location_me"
+                    android:tint="#ffffff"/>
+            </com.mapbox.mapboxsdk.maps.MapView>
+
+            <Button
+                android:background="?attr/selectIconColor"
+                android:id="@+id/SendScrub"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Отправить данные"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

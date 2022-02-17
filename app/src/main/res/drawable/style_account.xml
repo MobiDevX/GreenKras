@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:bottom="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp">
+            </padding>
+            <solid android:color="?attr/accountHead"/>
+            <corners android:bottomRightRadius="14dip"
+                android:bottomLeftRadius="90dp"
+                android:topLeftRadius="90dp"
+                android:topRightRadius="0.1dp"/>
+        </shape>
+    </item>
+</selector>

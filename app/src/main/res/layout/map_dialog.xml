@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor">
+
+    <TextView
+        android:layout_marginLeft="34dp"
+        android:textColor="?attr/textColor"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заметили ошибку?"
+        android:textStyle="bold"
+        android:textSize="22dp">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/textColor"
+            android:id="@+id/rbNone"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Такого объекта нет" />
+
+        <RadioButton
+            android:textColor="?attr/textColor"
+            android:id="@+id/rbRemove"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Погиб / уничтожен" />
+
+        <RadioButton
+            android:textColor="?attr/textColor"
+            android:id="@+id/rbFine"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Объект в хорошем состоянии" />
+
+        <RadioButton
+            android:textColor="?attr/textColor"
+            android:id="@+id/rbNormal"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Объект в среднем состоянии" />
+
+        <RadioButton
+            android:textColor="?attr/textColor"
+            android:id="@+id/rbDamaged"
+            android:layout_marginLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Объект в плохом состоянии" />
+    </RadioGroup>
+</LinearLayout>

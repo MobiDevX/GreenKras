@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "156299203682",
+    "firebase_url": "https://greenkras-ba1ad.firebaseio.com",
+    "project_id": "greenkras-ba1ad",
+    "storage_bucket": "greenkras-ba1ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156299203682:android:f8970f1d7a9d59f2eeed3b",
+        "android_client_info": {
+          "package_name": "com.reaver.greenkras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156299203682-uh47vg3e518pf1q972onohjufk4up393.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3f9e4JEnvgFQPWmxzHGz69vcnGYE6SY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156299203682-uh47vg3e518pf1q972onohjufk4up393.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

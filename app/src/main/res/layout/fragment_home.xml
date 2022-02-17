@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="?attr/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="26dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center"
+        android:text="Общественный проект GreenKras" />
+
+    <LinearLayout
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/style_account_reverse">
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Проект нацеленный на повышение экологической ответственности граждан, а так же на автоматизацию анализа объектов озеленения города Красноярск."
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp">
+    </View>
+    <LinearLayout
+        android:paddingBottom="7dp"
+        android:layout_gravity="center"
+        android:background="@drawable/style_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="3dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:gravity="center"
+            android:textColor="?attr/textColor"
+            android:text="Цели нашего проекта:"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="7dp"
+            android:textColor="?attr/textColor"
+            android:text="1. Привлечь внимание общественности к экологической обстановке города Красноярск.\n2. Создать актуальную базу данных объектов озеленения города Красноярск.\n3. Подготовить протитип системы обеспечивающий анализ парковых зон."
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:textColor="?attr/textColor"
+        android:text="С нами сотрудничают:"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sibgu"
+        android:layout_width="match_parent"
+        android:padding="@null"
+        android:layout_height="140dp">
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разработчик приложения: ">
+        </TextView>
+        <ImageView
+            android:id="@+id/me"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/vk_blue">
+        </ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/forest"
+        android:layout_width="wrap_content"
+        android:padding="@null"
+        android:layout_height="140dp">
+    </ImageView>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="Autocomplete" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColorHint">?attr/textColor</item>
+        <item name="android:background">?attr/bgColor</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="transparent">#14b3b3b3</item>
+        <item name="accountHead">#bbdbb6</item>
+        <item name="textColor">#464646</item>
+        <item name="bgGrey">#f5f5f5</item>
+        <item name="metaTextColor">#aeaeae</item>
+        <item name="bgColor">#ffffff</item>
+        <item name="selectTextColor">#1e1e1e</item>
+        <item name="unselectTextColor">#1e1e1e </item>
+        <item name="selectIconColor">#5DA652</item>
+        <item name="unselectIconColor">#717171</item>
+        <item name="menuColor">#ffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="accountHead">#292929</item>
+        <item name="transparent">#14b3b3b3</item>
+        <item name="bgGrey">#2d2d2d</item>
+        <item name="textColor">#aeaeae</item>
+        <item name="menuColor">#303030</item>
+        <item name="metaTextColor">#aeaeae</item>
+        <item name="selectIconColor">#5DA652</item>
+        <item name="unselectIconColor">#aeaeae </item>
+        <item name="selectTextColor">#ffffff</item>
+        <item name="unselectTextColor">#aeaeae </item>
+        <item name="android:textColorSecondary">#aeaeae</item>
+        <item name="bgColor">#1d1d1d</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">#1d1d1d</item>
+
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">?attr/bgColor</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#5DA652</item>
+    </style>
+
+
+    <style name="Upload" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Идёт отправка данных...</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="Download" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Идёт загрузка данных...</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+    <style name="ParkDownload" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Идёт загрузка данных о парках...</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor">
+
+    <TextView
+        android:id="@+id/camera"
+        android:textColor="?attr/textColor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="5dp"
+        android:text="Камера"
+        android:textSize="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/gallery"
+        android:textColor="?attr/textColor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="5dp"
+        android:text="Галерея"
+        android:textSize="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/clear"
+        android:textColor="?attr/textColor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="5dp"
+        android:text="Очистить"
+        android:textSize="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/back"
+        android:textColor="?attr/textColor"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="14dp"
+        android:text="Назад"
+        android:textSize="16dp">
+    </TextView>
+
+</LinearLayout>

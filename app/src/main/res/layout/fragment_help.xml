@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="?attr/bgColor">
+
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnNameTree"
+            android:layout_width="85dp"
+            android:layout_height="145dp"
+            android:background="?attr/bgColor"
+            android:src="@drawable/icon_tree"
+            android:text="Деревья Красноярска" />
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Деревья\nКрасноярска">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:background="?attr/bgColor"
+            android:src="@drawable/icon_scrub"
+            android:id="@+id/btnNameScrub"
+            android:layout_width="85dp"
+            android:layout_height="145dp" />
+        <TextView
+            android:textColor="?attr/textColor"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кустарники\nКрасноярска">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnNameParterres"
+            android:layout_width="85dp"
+            android:layout_height="145dp"
+            android:background="?attr/bgColor"
+            android:src="@drawable/icon_parterres" />
+
+        <TextView
+            android:textColor="?attr/textColor"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цветники\nКрасноярска">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnHealthTree"
+                android:layout_width="85dp"
+                android:layout_height="145dp"
+                android:background="?attr/bgColor"
+                android:src="@drawable/hp_tree"
+                android:text="Деревья Красноярска" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Состояние\nДеревьев"
+                android:textColor="?attr/textColor"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnHealthScrub"
+                android:layout_width="85dp"
+                android:layout_height="145dp"
+                android:background="?attr/bgColor"
+                android:src="@drawable/hp_scrub" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Состояние\nКустарников"
+                android:textColor="?attr/textColor"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnHealthParterres"
+                android:layout_width="85dp"
+                android:layout_height="145dp"
+                android:background="?attr/bgColor"
+                android:src="@drawable/hp_parterres" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Состояние\nЦветников"
+                android:textColor="?attr/textColor"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Если вы нашли ошибку в справочнике или нужно добавить растение - свяжитесь с нами в Vk или напишите нам на почту"
+        android:textColor="?attr/textColor"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
